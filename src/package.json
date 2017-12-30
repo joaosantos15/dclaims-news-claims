@@ -1,0 +1,14 @@
+{
+  "name": "hypercerts-news-claims",
+  "version": "1.0.0",
+  "description": "news claims datatype for hypercerts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joao Santos <joao.marques.santos@tecnico.ulisboa.pt>",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.1.0"
+  }
+}
