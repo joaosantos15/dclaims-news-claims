@@ -24,8 +24,16 @@ exports.BatchClaim = function (articleId, issuerId, claimsList) {
 }
 
 function BatchClaimContent (articleId, claimsList) {
-  this.id = articleId
-  this.claimsList = claimsList
+  try {
+    if (checkLinkSizes(claimsList)) {
+      this.id = articleId
+      this.claimsList = claimsList
+    } else {
+      throw 'IPFS links not valid'
+    }
+  } catch (e) {
+    console.error('ERROR: ' + e)
+  }
 }
 
 function SignatureContent () {
@@ -40,4 +48,15 @@ function SignatureContent () {
 function RevocationContent () {
   this.id = 'default-articleId'
   this.type = 'default-SimpleRevocationList2017'
+}
+
+function checkLinkSizes (claimListLinks) {
+  const SIZE = 46
+
+  for (let i = 0; i < claimListLinks.length; i++) {
+    if (claimListLinks[i].length !== SIZE) {
+      return false
+    }
+  }
+  return true
 }
