@@ -5,6 +5,8 @@ const VERSION = '0.0.1'
 
 exports = module.exports
 
+exports.BatchClaimType = HYPERCERTS_NAMESPACE + '-' + CLAIM_TYPE + '-' + VERSION
+
 /**
 * Get an instance of a BatchClaim object
 * @param {string} articleId ID of the news article

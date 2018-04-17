@@ -5,6 +5,8 @@ exports = module.exports
 
 exports.SingleClaim = SingleClaim.SingleClaim
 exports.BatchClaim = BatchClaim.BatchClaim
+exports.SingleClaimType = SingleClaim.SingleClaimType
+exports.BatchClaimType = BatchClaim.BatchClaimType
 
 /*
 var issuerId = 'hello', articleId = 'hello', category = 'hello', freeText = 'hello'

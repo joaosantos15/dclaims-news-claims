@@ -1,6 +1,6 @@
 {
   "name": "hypercerts-news-claims",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "news claims datatype for hypercerts",
   "main": "index.js",
   "scripts": {

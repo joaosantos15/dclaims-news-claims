@@ -5,6 +5,8 @@ const VERSION = '0.0.1'
 
 exports = module.exports
 
+exports.SingleClaimType = HYPERCERTS_NAMESPACE + '-' + CLAIM_TYPE + '-' + VERSION
+
 /**
 * Get an instance of a SingleClaim object
 * @param {string} issuerId Ethereum address of the Issuer
