@@ -15,5 +15,7 @@ var issuerId = 'hello', articleId = 'hello', category = 'hello', freeText = 'hel
 var a = new exports.SingleClaim(issuerId, articleId, category, freeText)
 var b = new exports.SingleClaim(issuerId, articleId, category, freeText)
 
-console.log(a instanceof exports.BatchClaim)
+// console.log(a instanceof exports.SingleClaim)
+// console.log(a instanceof exports.BatchClaim)
+console.log(JSON.stringify(a))
 */

@@ -2,6 +2,7 @@ const uuidv4 = require('uuid/v4')
 const HYPERCERTS_NAMESPACE = 'hypercerts-news'
 const CLAIM_TYPE = 'single-claim'
 const VERSION = '0.0.1'
+const W3C_WA_EXAMPLE = require('./w3c-web-annotation-template.js')
 
 exports = module.exports
 
@@ -28,7 +29,8 @@ exports.SingleClaim = function (issuerId, articleId, category, freeText) {
 function SingleClaimContent (articleId, category, freeText) {
   this.id = articleId
   this.category = category
-  this.freeText = freeText
+  // this.freeText = freeText
+  this.freeText = W3C_WA_EXAMPLE.getExample()
 }
 
 function SignatureContent () {
